@@ -1,7 +1,7 @@
 databases:
   - name: steam-kingz
-    databaseName: steam-kingz
-    user: steam-kingz
+    databaseName: steam_kingz_post_development
+    user: steam-kingz-post
     plan: free
 
 services:
