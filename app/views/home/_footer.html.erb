@@ -1,7 +1,7 @@
-<div class="container">
+<%# <div class="container">
     <footer class="py-5">
-        <div class="row">
-            <div class="col-4 col-md-3 mb-3">
+        <div class="nav row justify-content-space-between">
+            <div class="col-4 col-md-3 mb-3 justify-content-start">
                 <h5>
                     <b>Steam Kingz</b>
                 </h5>
@@ -13,9 +13,7 @@
                 </ul>
             </div>
 
-            <div class="col-4 col-md-3 mb-3"></div>
-
-            <div class="col-md-5 offset-md-1 mb-3">
+            <div class="col-md-5 offset-md-1 mb-3 justify-content-end">
                 <form>
                     <h5>Subscribe to our newsletter</h5>
                     <p>Monthly digest of what's new and exciting from us.</p>
@@ -32,18 +30,69 @@
                 </div>
             </div>
         </footer>
+    </div> %>
+
+<footer>
+    <div class="row">
+        <div class=" footer-columns">
+            <div class="footer-column">
+                <h5>
+                    <b>Steam Kingz</b>
+                </h5>
+                <ul class="nav flex-column">
+                    <i class="bi bi-telephone">
+                        (647)335-1208</i>
+                    <i class="bi bi-envelope">
+                        steamkingzpro@gmail.com</i>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-subscribe" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Steam Kingz</p>
+            </div>
+        </div>
+
     </div>
+</footer>
 
+<style>
+    footer {
+        background-color: #fff; /* Example background color */
+        padding: 20px 0; /* Adjust padding as needed */
+    }
 
-    <style>
-        .btn-subscribe {
-            background-color: #88AB8E;
-            color: #fff;
-            border-color: #88AB8E;
-        }
-        .btn-subscribe:hover {
-            background-color: #AFC8AD;
-            color: #fff;
-            border-color: #AFC8AD;
-        }
-    </style>
+    .footer-columns {
+        display: flex;
+        justify-content: space-between; /* This will justify the columns to the edges */
+        max-width: 1300px; /* Example max-width */
+        margin: 0 auto; /* Center the columns horizontally */
+    }
+
+    .footer-column {
+        width: 48%; /* Adjust width as needed */
+    }
+    .btn-subscribe {
+        background-color: #0eb27d;
+        color: #fff;
+        border-color: #0eb27d;
+    }
+    .btn-subscribe:hover {
+        background-color: #AFC8AD;
+        color: #fff;
+        border-color: #AFC8AD;
+    }
+</style>
